@@ -1,0 +1,11 @@
+package com.dbs.project.model;
+
+public class Employee {
+	
+	String empId;
+	String name;
+	
+	
+	
+
+}

@@ -1,0 +1,5 @@
+1662526999899	Delete element
+1662627552757	Rename type 'Employee'
+1662628555033	Encapsulate field 'id'
+1662628568435	Encapsulate field 'name'
+1662628595257	Encapsulate field 'sal'

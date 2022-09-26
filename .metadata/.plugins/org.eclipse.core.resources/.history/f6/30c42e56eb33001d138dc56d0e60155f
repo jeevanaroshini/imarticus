@@ -1,0 +1,23 @@
+package com.mvc.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.mvc.demo.dto.UserDTO;
+
+@Controller
+public class DBSController {
+	@RequestMapping("/")
+	public String home() {
+		return "Login.jsp";
+	}
+	@PostMapping("/login")
+	public String loginPage(@RequestBody UserDTO user) {
+		System.out.println("Username-->"+user.getUserName());
+		System.out.println("Password-->"+user.getPassword());
+		return "home.jsp";
+	}
+}
